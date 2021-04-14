@@ -1,0 +1,149 @@
+body {
+    font: 14px "Century Gothic", Futura, sans-serif;
+    /* margin: 20px; */
+    margin-top: 40px;
+    background: #0c163a;
+    color: #fff;
+  }
+  
+  ol, ul {
+    padding-left: 30px;
+  }
+  
+  .board-row:after {
+    clear: both;
+    content: "";
+    display: table;
+  }
+  
+  .status {
+    margin-bottom: 10px;
+  }
+  
+  .square {
+    background: #fff;
+    border: 1px solid #999;
+    float: left;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 34px;
+    height: 34px;
+    margin-right: -1px;
+    margin-top: -1px;
+    padding: 0;
+    text-align: center;
+    width: 34px;
+  }
+  
+  .square:focus {
+    outline: none;
+  }
+  
+  .kbd-navigation .square:focus {
+    background: #ddd;
+  }
+  
+  .game {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .game-info {
+    margin-left: 20px;
+  }
+  
+  h1 {
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #f1f1f1
+    
+}
+.container {
+    margin: 0 auto;
+    width: 400px;
+}
+
+.board-game {
+    width: 400px;
+    height: 400px;
+    border: 1px solid #dadada;
+    margin: 0 auto;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.board-game > li {
+    list-style: none;
+    float: left;
+    overflow: hidden;
+    text-decoration:none;
+    width: 100px;
+    height: 100px;
+    background: #f1f1f1;
+    border: 1px solid #ccc;
+    border-right: 1px solid #fff;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 20px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.board-game > li.x {
+    font-size: 40px;
+    color: #802a0b;
+}
+
+.board-game > li.o {
+    font-size: 40px;
+    color: #1ba748;
+}
+
+.board-game > li:hover {
+    background: #f9f9f9;
+}
+
+.board-game > li:active {
+    width: 100px;
+    height: 100px;
+    border: 0;
+}
+
+#nfo {
+    text-align:center;
+    margin-top: 10px;
+}
+
+#whos-turn > span,
+.board-game-messages > span {
+    display: none;
+}
+
+#whos-turn.x span.x,
+#whos-turn.o span.o, 
+.board-game-messages.player-x-win > span.player-x-win, 
+.board-game-messages.player-o-win > span.player-o-win,
+.board-game-messages.draw > span.draw {
+    display: block;
+    margin-top: 10px;
+}
+
+#reset-game {
+    text-align: center;
+        border: none;
+        padding: 0.6em 1.2em;
+        background: #ed4e6e;
+        color: #fff;
+        font-size: 1em;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        cursor: pointer;
+        display: inline-block;
+        margin: 3px 2px;
+        border-radius: 2px;
+}
+
+#reset-game:hover {
+        background: #2c3e52;
+}
